@@ -10,12 +10,12 @@ import (
 	"github.com/aws/aws-sdk-go/service/dynamodb"
 )
 
-func makeMessage(recipent, sender, subject, message string) *dynamodb.PutItemInput {
+func makeMessage(recipient, sender, subject, message string) *dynamodb.PutItemInput {
 	params := &dynamodb.PutItemInput{
 		TableName: aws.String("Message"),
 		Item: map[string]*dynamodb.AttributeValue{
 			"Recipient": {
-				S: aws.String(recipent),
+				S: aws.String(recipient),
 			},
 			"Date": {
 				S: aws.String(time.Now().String()),
