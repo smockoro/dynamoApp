@@ -289,5 +289,8 @@ $RECYCLE.BIN/
 
 # AWS lambda
 lambda/*.zip
+lambda/recipent_select/recipent_select
+lambda/put_message/put_message
+lambda/sender_select/sender_select
 
 # End of https://www.gitignore.io/api/go,vim,emacs,macos,windows,eclipse,intellij
